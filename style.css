@@ -1,0 +1,845 @@
+
+
+body {
+    width: auto;
+}
+
+tr td {
+    border: none !important;
+}
+
+footer {
+    font-family: "HelveticaNeue";
+}
+
+.container-fluid {
+    padding: 0 !important;
+}
+
+p {
+    font-size: 16pt;
+}
+
+t .margin {
+    margin-bottom: 45px;
+}
+
+.navbar-center {
+    margin-left: 28%;
+    margin-bottom: 0 !important;
+}
+
+.bg {
+    background-color: #ffffff;
+}
+
+.bg-1 {
+    background-color: #f0f3f3;
+    /* Green */
+    color: #000000;
+    padding-top: 20px !important;
+    font-family: "HelveticaNeue";
+}
+
+.bg-2 {
+    background-color: #f0f2f2;
+    /* Dark Blue */
+    color: #000000;
+}
+
+.bg-3 {
+    background-color: #ffffff;
+    /* White */
+    color: #000;
+    font-family: "HelveticaNeue";
+}
+
+.bg-4 {
+    background-color: #eff2f2;
+    /* Black Gray */
+    color: #000;
+}
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.navbar {
+    padding-top: 10px;
+    padding-bottom: 10x;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12pt;
+    letter-spacing: 5px;
+}
+
+/*++++++++++++++Button++++++++++++++++++*/
+
+.btn-select {
+    position: relative;
+    font-family: "HelveticaNeue";
+    padding: 0;
+    min-width: 236px;
+    width: 10%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background: -webkit-linear-gradient(#fdfdfd, #eaeded);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fdfdfd, #eaeded);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fdfdfd, #eaeded);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fdfdfd, #eaeded);
+}
+
+.btn-select .btn-select-value {
+    font-family: "HelveticaNeue";
+    padding: 6px 12px;
+    display: block;
+    position: absolute;
+    left: 0;
+    border-color: linear-gradient(#fdfdfd, #eaeded);
+    right: 34px;
+    outline: none;
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    border-top: none !important;
+    border-bottom: none !important;
+    border-left: none !important;
+    background: -webkit-linear-gradient(#fdfdfd, #eaeded);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fdfdfd, #eaeded);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fdfdfd, #eaeded);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fdfdfd, #eaeded);
+}
+
+.btn-select .btn-select-arrow {
+    float: right;
+    line-height: 20px;
+    padding: 6px 10px;
+    top: 0;
+}
+
+.btn-select ul {
+    display: none;
+    background-color: white;
+    color: black;
+    clear: both;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-top: none !important;
+    position: absolute;
+    left: -1px;
+    right: -1px;
+    top: 33px;
+    z-index: 999;
+}
+
+.btn-select ul li {
+    padding: 3px 6px;
+    text-align: left;
+}
+
+.btn-select ul li:hover {
+    background-color: #f4f4f4;
+}
+
+.btn-select ul li.selected {
+    color: white;
+}
+
+/* Default Start */
+.btn-select.btn-default:hover, .btn-select.btn-default:active, .btn-select.btn-default.active {
+    border-color: #ccc;
+}
+
+.btn-select.btn-default ul li.selected {
+    background-color: #ccc;
+}
+
+.btn-select.btn-default ul, .btn-select.btn-default .btn-select-value {
+    background-color: white;
+    border: #ccc 1px solid;
+}
+
+.btn-select.btn-default:hover, .btn-select.btn-default.active {
+    background-color: #e6e6e6;
+}
+/* Default End */
+
+/* Primary Start */
+.btn-select.btn-primary:hover, .btn-select.btn-primary:active, .btn-select.btn-primary.active {
+    border-color: #286090;
+}
+
+.btn-select.btn-primary ul li.selected {
+    background-color: #2e6da4;
+    color: white;
+}
+
+.btn-select.btn-primary ul {
+    border: #2e6da4 1px solid;
+}
+
+.btn-select.btn-primary .btn-select-value {
+    background-color: #428bca;
+    border: #2e6da4 1px solid;
+}
+
+.btn-select.btn-primary:hover, .btn-select.btn-primary.active {
+    background-color: #286090;
+}
+/* Primary End */
+
+/* Success Start */
+.btn-select.btn-success:hover, .btn-select.btn-success:active, .btn-select.btn-success.active {
+    border-color: #4cae4c;
+}
+
+.btn-select.btn-success ul li.selected {
+    background-color: #4cae4c;
+    color: white;
+}
+
+.btn-select.btn-success ul {
+    border: #4cae4c 1px solid;
+}
+
+.btn-select.btn-success .btn-select-value {
+    background-color: #5cb85c;
+    border: #4cae4c 1px solid;
+}
+
+.btn-select.btn-success:hover, .btn-select.btn-success.active {
+    background-color: #449d44;
+}
+/* Success End */
+
+/* info Start */
+.btn-select.btn-info:hover, .btn-select.btn-info:active, .btn-select.btn-info.active {
+    border-color: #46b8da;
+}
+
+.btn-select.btn-info ul li.selected {
+    background-color: #46b8da;
+    color: white;
+}
+
+.btn-select.btn-info ul {
+    border: #46b8da 1px solid;
+}
+
+.btn-select.btn-info .btn-select-value {
+    background-color: #5bc0de;
+    border: #46b8da 1px solid;
+}
+
+.btn-select.btn-info:hover, .btn-select.btn-info.active {
+    background-color: #269abc;
+}
+/* info End */
+
+/* warning Start */
+.btn-select.btn-warning:hover, .btn-select.btn-warning:active, .btn-select.btn-warning.active {
+    border-color: #eea236;
+}
+
+.btn-select.btn-warning ul li.selected {
+    background-color: #eea236;
+    color: white;
+}
+
+.btn-select.btn-warning ul {
+    border: #eea236 1px solid;
+}
+
+.btn-select.btn-warning .btn-select-value {
+    background-color: #f0ad4e;
+    border: #eea236 1px solid;
+}
+
+.btn-select.btn-warning:hover, .btn-select.btn-warning.active {
+    background-color: #d58512;
+}
+/* warning End */
+
+/* danger Start */
+.btn-select.btn-danger:hover, .btn-select.btn-danger:active, .btn-select.btn-danger.active {
+    border-color: #d43f3a;
+}
+
+.btn-select.btn-danger ul li.selected {
+    background-color: #d43f3a;
+    color: white;
+}
+
+.btn-select.btn-danger ul {
+    border: #d43f3a 1px solid;
+}
+
+.btn-select.btn-danger .btn-select-value {
+    background-color: #d9534f;
+    border: #d43f3a 1px solid;
+}
+
+.btn-select.btn-danger:hover, .btn-select.btn-danger.active {
+    background-color: #c9302c;
+}
+/* danger End */
+
+.btn-select.btn-select-light .btn-select-value {
+    background-color: white;
+    color: black;
+}
+
+
+
+/*++++++++++++++Button++++++++++++++++++*/
+
+/* header2*/
+
+.purchase {
+    font-size: 20pt;
+    font-family: "Gotham Pro";
+    color: #000;
+    padding: 0;
+    margin:  0;
+}
+.purchase1 {
+    font-size: 20pt;
+    font-family: "Gotham Pro";
+    color: #000;
+}
+
+.chat {
+    font-size: 14pt;
+    font-family: "Gotham Pro";
+    color: #1792d6;
+    padding-top: 10px;
+}
+
+.callcenter {
+    font-size: 14pt;
+    font-family: "Gotham Pro";
+    color: #000;
+    padding-top: 10px;
+}
+
+
+/* button*/
+
+.nav-btn {
+    border: 0 !important;
+    font-size: 13pt;
+    font-family: "HelveticaNeue";
+}
+
+
+/* end header2*/
+
+
+/*================================ MAIN======================================================*/
+
+
+/*================================ FIRST TABLE===========================*/
+
+.panel-body {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+}
+
+.panel-left {
+    margin-top: 43px;
+}
+
+.panel-right {
+    margin-top: 43px;
+}
+
+.table {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.green-ln {
+    border: none;
+    height: 20px;
+    background: #dbf0b3;
+}
+
+.white-ln {
+    font-size: 20pt;
+    font-family: "HelveticaNeue";
+    border: none;
+    height: 20px;
+    background: #fff;
+    border: none;
+}
+
+.grey-ln {
+    font-size: 14pt;
+    font-family: "HelveticaNeue";
+    border: none;
+    height: 15x;
+    background: #fff;
+    border: none;
+    color: #aeaeae;
+}
+
+.grey-ln1 {
+    font-size: 14pt;
+    font-family: "HelveticaNeue";
+    border: none;
+    background: #fff;
+    border: none;
+    color: #aeaeae;
+}
+
+.greyln2 {
+    font-size: 14pt;
+    font-family: "HelveticaNeue";
+    border: none;
+    color: #aeaeae;
+    font-weight: 100;
+}
+
+.bl-ln {
+    font-size: 16pt;
+    font-family: "HelveticaNeue";
+    border: none;
+    height: 25px;
+}
+
+.orn-ln {
+    border: none;
+    height: 24px;
+    background: #ffe5b3;
+}
+
+.blue-ln {
+    border: none;
+    height: 30px;
+    background: #b3dbf2;
+}
+
+input[type="number"] {
+    border-radius: 5px;
+    border: 2px solid #aeaeae;
+    width: 50px;
+    padding-left: 10px;
+    border: 1px solid #999;
+    color: #000;
+}
+
+.none-bd {
+    border: none;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: -webkit-linear-gradient(#fdfdfd, #eaeded);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fdfdfd, #eaeded);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fdfdfd, #eaeded);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fdfdfd, #eaeded);
+    /* Standard syntax */
+    background-image: none;
+}
+
+
+/* Custom Select */
+
+.select {
+    font-size: 14pt;
+    font-family: "HelveticaNeue";
+    position: relative;
+    display: block;
+    height: 40px;
+    width: 270px;
+    line-height: 2;
+    background: -webkit-linear-gradient(#fdfdfd, #eaeded);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fdfdfd, #eaeded);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fdfdfd, #eaeded);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fdfdfd, #eaeded);
+    /* Standard syntax */
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+select {
+    font-size: 14pt;
+    font-family: "HelveticaNeue";
+    margin: 0;
+    padding: 0 0 0.5em;
+    color: #000;
+    cursor: pointer;
+    width: 270px;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+
+/* Arrow */
+
+.select::after {
+    content: '\22C1';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 1em;
+    background: -webkit-linear-gradient(#fdfdfd, #eaeded);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fdfdfd, #eaeded);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fdfdfd, #eaeded);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fdfdfd, #eaeded);
+    /* Standard syntax */
+    pointer-events: none;
+}
+
+
+/* Transition */
+
+.select:hover::after {
+    color: #000;
+}
+
+.select::after {
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+}
+
+.number {
+    padding-top: 25px !important;
+    font-family: "HelveticaNeue";
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+.number1 {
+    margin-top: 15px !important;
+}
+
+.save {
+    margin-bottom: 15px !important;
+}
+
+
+/*================================ END  FIRST TABLE===========================*/
+
+
+/*================================ SECOND TABLE===========================*/
+
+.summtext {
+    font-family: "HelveticaNeue";
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+.summtext1 {
+    font-family: "HelveticaNeue";
+    font-size: 14pt;
+    color: #0088d3;
+}
+
+.summtext2 {
+    font-size: 30pt;
+    font-family: "HelveticaNeue";
+    border: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.summtext3 {
+    font-size: 14pt;
+    font-family: "HelveticaNeue";
+    border: none;
+    color: #aeaeae;
+}
+
+.summtext4 {
+    font-size: 14pt;
+    font-family: "HelveticaNeue";
+    font-weight: bold;
+    color: #c52627
+}
+
+.summtext5 {
+    font-size: 14pt;
+    font-family: "HelveticaNeue";
+    color: #000;
+}
+
+.textadd {
+    margin-left: 20px;
+}
+
+.btn-danger {
+    background: -webkit-linear-gradient(#e45531, #c52727) !important;
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#e45531, #c52727)!important;
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#e45531, #c52727)!important;
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#e45531, #c52727)!important;
+    font-size: 14pt;
+    font-family: "HelveticaNeue";
+    margin: 10px;
+    margin-top: 15px;
+}
+
+
+/*================================ END  SECOND TABLE===========================*/
+/*================================ END  MAIN===============================================*/
+
+
+
+
+
+/*================================ FOOTER ==================================================*/
+/*================================ FOOTER1 ===========================*/
+
+.finaltext1 {
+    font-size: 20pt;
+    font-family: "HelveticaNeue";
+    font-weight: bold;
+    color: #000;
+    margin-top: 58px;
+}
+
+.finaltext2 {
+    font-size: 16pt;
+    font-family: "HelveticaNeue";
+    color: #000;
+}
+
+.finaltext3 {
+    font-size: 16pt;
+    font-family: "HelveticaNeue";
+    color: #44a8df;
+    margin-bottom: 60px;
+}
+
+
+/*================================ END FOOTER1 ===========================*/
+
+
+/*================================ FOOTER2 ===========================*/
+
+.finalbg {
+    font-family: "HelveticaNeue";
+    background-color: #f0f3f3 !important;
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+}
+
+.final2 {
+    font-size: 13pt;
+    font-family: "HelveticaNeue";
+    color: #909090;
+    margin-top: 31px;
+}
+
+.final3 {
+    font-size: 13pt;
+    font-family: "HelveticaNeue";
+    color: #44a8df;
+    margin-top: 31px;
+}
+
+.breadcrumb {
+    margin-top: 77px;
+}
+
+li a.grey {
+    color: #909090 !important;
+    text-decoration: none !important;
+}
+
+li a .grey:hover {
+    color: #909090 !important;
+    text-decoration: none !important;
+}
+
+.breadcrumb-item a {
+    text-decoration: none !important;
+    color: #909090 !important;
+}
+
+.breadcrumb-item a:hover {
+    text-decoration: none !important;
+    color: #909090 !important;
+}
+
+.finmrg {}
+
+.finaltext {
+    font-size: 13pt;
+    font-family: "HelveticaNeue";
+    color: #909090;
+}
+
+.nav .navbar-nav {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+.divider {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+
+/*FINAL NAV MENU*/
+
+ul.navfn {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+}
+
+li.navfn1 {
+    float: left;
+}
+
+li.navfn1 a {
+    display: inline;
+    color: #000000;
+    text-decoration: none;
+    padding-left: 5px;
+}
+
+.otstyp3 {
+    margin-bottom: 45px;
+}
+
+
+/*=======SELECT BOX========*/
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    color: #222222
+}
+
+
+/* Dropdown */
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+    font-family: "HelveticaNeue";
+}
+
+.dd-button {
+    display: inline-block;
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 10px 70px 10px 20px;
+    background-color: #d8dddd;
+    cursor: pointer;
+    white-space: nowrap;
+    outline: none;
+}
+
+.dd-button:after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    right: 15px;
+    width: 15px;
+    height: 15px;
+    border-top: 3px solid #000;
+    border-right: 3px solid #000;
+    -moz-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(SizingMethod='auto expand', M11=-0.7071067811865476, M12=-0.7071067811865475, M21=0.7071067811865475, M22=-0.7071067811865476)";
+}
+
+.dd-button:hover {
+    background-color: #d8dddd;
+}
+
+.dd-input {
+    display: none;
+}
+
+.dd-menu {
+    font-family: "HelveticaNeue";
+    position: absolute;
+    top: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0;
+    margin: 2px 0 0 0;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    list-style-type: none;
+}
+
+.dd-input+.dd-menu {
+    display: none;
+}
+
+.dd-input:checked+.dd-menu {
+    display: block;
+}
+
+.dd-menu li {
+    padding: 10px 20px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.dd-menu li:hover {
+    background-color: #f6f6f6;
+}
+
+.dd-menu li a {
+    display: block;
+    margin: -10px -20px;
+    padding: 10px 20px;
+}
+
+.dd-menu li.divider {
+    padding: 0;
+    border-bottom: 1px solid #cccccc;
+}
+
+
+/*=======END SELECT BOX========*/
+
+
+/*================================ END FOOTER2 ===========================*/
+
+
+/*================================ END  FOOTER ======================================================*/
